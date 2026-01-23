@@ -102,9 +102,7 @@ function updateHover() {
 }
 
 window.addEventListener('beforeunload', function (e) {
-  // Cancel the event
   e.preventDefault();
-  // Chrome requires returnValue to be set
-  e.returnValue = '';
+  e.returnValue = 'yo gang something tried to close ur tab, click cancel if it wasnt you';
 });
 
